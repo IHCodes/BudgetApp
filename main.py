@@ -2,6 +2,8 @@ from BudgetApp import Budget
 
 food = Budget(200)
 
+file.close
+
 bills = Budget(150)
 
 entertainment = Budget(400)
