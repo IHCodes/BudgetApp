@@ -1,10 +1,27 @@
 from BudgetApp import Budget
 
-food = Budget()
-food.deposit(100)
+food = Budget(200)
 
-print(food.balance)
+bills = Budget(150)
 
-food.withdraw(30)
-print(food.balance)
+entertainment = Budget(400)
 
+print(food)
+print(bills)
+print(entertainment)
+
+food.withdraw(50)
+
+print()
+print(food)
+
+food.deposit(500)
+
+print()
+print(food)
+
+entertainment.deposit(food.withdraw(50))
+
+print()
+print(food)
+print(entertainment)
